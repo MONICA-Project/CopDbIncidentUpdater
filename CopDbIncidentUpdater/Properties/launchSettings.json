@@ -1,0 +1,41 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:65020",
+      "sslPort": 44381
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "COP_AUTH_TOKEN": "6ffdcacb-c485-499c-bce9-23f76d06aa36",
+        "OGCServerUID": "pkool",
+        "COP_API_BASE_PATH_HUB": "https://portal.monica-cloud.eu/FdL/cop/hub/",
+        "CONNECTION_STR": "Host=mpclfdbpql01.monica-cloud.eu;Database=monica_fdl2019;Username=monica_cnet;Password=Bohm1Shu;Port=9999",
+        "OGCMQTTPrefix": "GOST_LUMIERE_2019",
+        "OGCServerBaseURL": "http://monappdwp3.monica-cloud.eu:5050/gost_lumiere_2019/v1.0/",
+        "mqttDebug": "False",
+        "COP_API_BASE_PATH": "https://portal.monica-cloud.eu/FdL/cop/api/",
+        "INCIDENT_TYPE": "OverCrowding",
+        "GOSTQuery": "$filter=substringof(%27DSS:Overcrowding%27,name)",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OGCServerPwd": "semester2012kreta"
+      }
+    },
+    "CopDbIncidentUpdater": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
